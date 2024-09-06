@@ -1,0 +1,16 @@
+.box {
+    position: relative;
+    width: 74.5rem; 
+    margin-top: 4.75rem; 
+    padding-bottom: 34.8rem;
+
+    &__menu {
+        position: relative; 
+    }
+
+    &__countdown {
+        position: absolute;
+        top: 6.9375rem;
+        left: 0;
+    }
+}

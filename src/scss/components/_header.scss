@@ -1,0 +1,16 @@
+// src/scss/components/_header.scss
+
+.header-title {
+    width: 302px;
+    height: 36px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    color: #FFFFFF;
+
+    &__underscore {
+        color: #6FFF57;
+    }
+}
