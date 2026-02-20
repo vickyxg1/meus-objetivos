@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "Projeto de Meus Objetivos de Vida",
   "main": "src/js/main.js",
-"scripts": {
-  "sass": "sass --watch src/scss/styles.scss:dist/css/styles.css",
-  "build": "sass src/scss/styles.scss:dist/css/styles.css && cp src/index.html dist/index.html",
-  "start": "npm run build && live-server dist",
-  "test": "echo \"Error: no test specified\" && exit 1"
-},
+  "scripts": {
+    "sass": "sass --watch src/scss/styles.scss:dist/css/styles.css",
+    "build": "sass src/scss/styles.scss:dist/css/styles.css && node -e \"const fs=require('fs');fs.mkdirSync('dist',{recursive:true});fs.mkdirSync('dist/js',{recursive:true});fs.copyFileSync('src/index.html','dist/index.html');fs.copyFileSync('src/js/main.js','dist/js/main.js');\"",
+    "start": "npm run build && live-server dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "author": "Vicky",
   "license": "ISC",
   "devDependencies": {
@@ -17,4 +17,3 @@
   },
   "keywords": []
 }
-
